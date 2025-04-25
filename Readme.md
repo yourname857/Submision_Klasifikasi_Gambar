@@ -7,13 +7,13 @@ Proyek ini merupakan implementasi klasifikasi gambar menggunakan model Convoluti
 ## Struktur Direktori
 
 ```
-VegetableClassifier/
+SUBMISION_KLASIFIKASIGAMBAR/
 │
 ├── hasil_split/            # File CSV hasil pembagian data
 ├── saved_model/            # Model dalam format SavedModel
 ├── tfjs_model/             # Model dalam format TensorFlow.js
 ├── model.tflite            # Model dalam format TensorFlow Lite
-├── best_model.h5           # Model terbaik disimpan sebagai HDF5
+├── best_model.keras        # Model terbaik
 ├── requirements.txt        # Daftar pustaka yang dibutuhkan
 ├── notebook.ipynb          # Notebook utama proyek
 └── README.md               # Penjelasan proyek ini
@@ -57,10 +57,11 @@ VegetableClassifier/
 
 5. **Evaluasi & Visualisasi**
 
+   - Evaluasi Test Set sehingga mendapatkan akurasi > 85%
    - Grafik akurasi dan loss untuk data pelatihan dan validasi
 
 6. **Penyimpanan Model**
-   - Disimpan dalam format: `.h5`, `SavedModel`, `.tflite`, dan `tfjs`
+   - Disimpan dalam format: `.keras`, `SavedModel`, `.tflite`, dan `tfjs`
 
 ---
 
@@ -81,7 +82,7 @@ Model berhasil mencapai akurasi validasi dan pengujian lebih dari 85%, tergantun
 
 ## Output Akhir
 
-- `best_model.h5`: Model terbaik selama pelatihan
+- `best_model.keras`: Model terbaik selama pelatihan
 - `saved_model/`: Direktori model untuk deployment
 - `model.tflite`: Model ringan untuk mobile
 - `tfjs_model/`: Model siap pakai di web browser
